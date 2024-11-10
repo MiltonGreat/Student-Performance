@@ -8,8 +8,8 @@ This project demonstrates various data cleaning techniques using Python (Pandas 
 
 The dataset includes two CSV files:
 
-    student-mat.csv: Data related to students enrolled in a Math course.
-    student-por.csv: Data related to students enrolled in a Portuguese language course.
+- student-mat.csv: Data related to students enrolled in a Math course.
+- student-por.csv: Data related to students enrolled in a Portuguese language course.
 
 Both datasets share several columns, including demographic information and academic performance (grades).
 
