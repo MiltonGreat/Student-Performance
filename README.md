@@ -4,6 +4,21 @@
 
 This project demonstrates various data cleaning techniques using Python (Pandas and NumPy) to process a dataset of students' performance on standardized tests. The dataset includes information about students' grades, demographic data, and study-related behaviors. The primary goal of this project is to prepare the data for analysis by handling missing values, smoothing noisy data, and removing outliers.
 
+### Quality Issues:
+
+- Missing values for student demographics or study time.
+- Outliers in test scores or study hours.
+- Non-numeric data (e.g., family support) requiring encoding.
+
+Cleaning/Transformation:
+- Impute missing values using median or mode for categorical variables.
+- Transform test scores into standardized z-scores for comparability.
+- Encode categorical variables like "family support" using one-hot encoding.
+
+Known Limitations:
+- Self-reported data may introduce bias (e.g., study hours).
+- Limited to a single region or school system, reducing generalizability.
+
 ### Dataset
 
 The dataset includes two CSV files:
