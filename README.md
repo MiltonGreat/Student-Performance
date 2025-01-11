@@ -1,23 +1,8 @@
-# Student Performance Data Cleaning Project
+# Student Performance Analysis
 
 ### Overview
 
-This project demonstrates various data cleaning techniques using Python (Pandas and NumPy) to process a dataset of students' performance on standardized tests. The dataset includes information about students' grades, demographic data, and study-related behaviors. The primary goal of this project is to prepare the data for analysis by handling missing values, smoothing noisy data, and removing outliers.
-
-### Quality Issues:
-
-- Missing values for student demographics or study time.
-- Outliers in test scores or study hours.
-- Non-numeric data (e.g., family support) requiring encoding.
-
-Cleaning/Transformation:
-- Impute missing values using median or mode for categorical variables.
-- Transform test scores into standardized z-scores for comparability.
-- Encode categorical variables like "family support" using one-hot encoding.
-
-Known Limitations:
-- Self-reported data may introduce bias (e.g., study hours).
-- Limited to a single region or school system, reducing generalizability.
+This project focuses on analyzing student performance data to understand key patterns, correlations, and outliers. The dataset contains information about students from two Portuguese schools and their academic achievements in math and Portuguese classes. The project includes data cleaning, visualization, and statistical analysis.
 
 ### Dataset
 
@@ -38,14 +23,45 @@ The dataset contains the following information:
 
 This project performs the following steps:
 
-- Data Inspection: Load and inspect the data for initial analysis.
-- Handling Missing Values: Clean the dataset by either dropping rows with missing values or imputing them using suitable methods.
-- Outlier Detection and Removal: Use boxplots and statistical methods (like IQR) to detect and remove outliers.
-- Smoothing Noisy Data: Apply techniques such as rolling means to smooth data where necessary.
-- Data Normalization: Normalize the data using techniques like StandardScaler to standardize numerical features.
-- Data Merging: Merge the dataset if required, such as combining data from different courses (Math and Portuguese).
-- Visualization: Use data visualization tools like matplotlib and seaborn to visualize various aspects of the dataset, including categorical and numerical distributions.
-- Export Cleaned Data: Save the cleaned data into new CSV files for future analysis or model building.
+1. Data Loading
+- Reads the student-mat.csv and student-por.csv files into pandas DataFrames.
+- Displays the first few rows to confirm successful loading.
+
+2. Missing Data Handling
+- Checks for missing values in both datasets.
+- Imputes missing numerical data using the mean and categorical data using the most frequent value.
+
+3. Outlier Detection and Removal
+- Visualizes outliers using boxplots.
+- Removes outliers based on the interquartile range (IQR) method.
+
+4. Data Normalization
+- Normalizes numeric columns using StandardScaler from scikit-learn.
+
+5. Dataset Merging
+- Merges the math and Portuguese datasets using shared columns such as school, sex, and age.
+
+6. Data Visualization
+- Creates visualizations to identify trends, distributions, and correlations:
+    - Distribution of student ages.
+    - Boxplots for numerical features.
+    - Correlation heatmap for numeric columns.
+    - Grade distribution for G1, G2, and G3.
+    - Study time vs. final grade (G3).
+
+7. Data Export
+- Saves the cleaned datasets to student-mat-cleaned.csv and student-por-cleaned.csv.
+
+### Key Insights
+
+- The analysis provides insights into factors influencing student performance, such as study time, attendance, and socio-economic factors.
+- The visualizations highlight the impact of study time on final grades and the distribution of grades across students.
+
+### Future Enhancements
+
+- Extend the analysis to include predictive modeling for student performance.
+- Explore additional correlations, such as the effect of parental education levels on grades.
+- Develop an interactive dashboard for visualizing student performance.
 
 ### Source
 
