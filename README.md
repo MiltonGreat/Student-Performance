@@ -4,6 +4,15 @@
 
 This project focuses on analyzing student performance data to understand key patterns, correlations, and outliers. The dataset contains information about students from two Portuguese schools and their academic achievements in math and Portuguese classes. The project includes data cleaning, visualization, and statistical analysis.
 
+### EDA Questions
+
+I want to answer the following questions:
+
+1. What is the distribution of student ages?
+2. How do student grades (G1, G2, G3) distribute across the dataset?
+3. What is the relationship between study time and final grade (G3)?
+4. What are the correlations between numerical features (e.g., study time, grades, family background)?
+
 ### Dataset
 
 The dataset includes two CSV files:
