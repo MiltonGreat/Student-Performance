@@ -29,33 +29,33 @@ Both datasets share several columns, including demographic information and acade
 
 The dataset contains the following information:
 
-- Demographic Information: Gender, age, address, family size, etc.
-- Educational Background: Mother's and father's education levels, type of school, etc.
-- Behavioral and Academic Data: Weekly study time, alcohol consumption, family relationships, grades (G1, G2, G3), etc.
+- **Demographic Information**: Gender, age, address, family size, etc.
+- **Educational Background**: Mother's and father's education levels, type of school, etc.
+- **Behavioral and Academic Data**: Weekly study time, alcohol consumption, family relationships, grades (G1, G2, G3), etc.
 
 ### Steps in Project
 
 This project performs the following steps:
 
-1. Data Loading
+1. **Data Loading**
 - Reads the student-mat.csv and student-por.csv files into pandas DataFrames.
 - Displays the first few rows to confirm successful loading.
 
-2. Missing Data Handling
+2. **Missing Data Handling**
 - Checks for missing values in both datasets.
 - Imputes missing numerical data using the mean and categorical data using the most frequent value.
 
-3. Outlier Detection and Removal
+3. **Outlier Detection and Removal**
 - Visualizes outliers using boxplots.
 - Removes outliers based on the interquartile range (IQR) method.
 
-4. Data Normalization
+4. **Data Normalization**
 - Normalizes numeric columns using StandardScaler from scikit-learn.
 
-5. Dataset Merging
+5. **Dataset Merging**
 - Merges the math and Portuguese datasets using shared columns such as school, sex, and age.
 
-6. Data Visualization
+6. **Data Visualization**
 - Distribution of student ages: Visualizes the age distribution across students.
 - Grade distribution (G1, G2, G3): Analyzes the distribution of student grades across different stages.
 - Study time vs. final grade (G3): Investigates the relationship between study time and final grades using boxplots.
