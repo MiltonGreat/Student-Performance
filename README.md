@@ -65,10 +65,8 @@ This project performs the following steps:
 - Family relationship quality vs. final grade: Examines how family relationship quality impacts academic performance.
 - Alcohol consumption vs. final grade: Analyzes the effect of alcohol consumption on academic performance.
 - Past failures vs. final grade: Investigates the impact of previous failures on final grades.
-- 
-### Key Insights
 
-## Conclusion
+### Key Insights
 
 1. **Age Distribution**: Both datasets exhibit similar age distributions, with students generally ranging from 15 to 20 years, and an average age around 16.4. This suggests that age is not a significant differentiator between the two datasets.
 
